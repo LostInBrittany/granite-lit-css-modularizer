@@ -1,0 +1,16 @@
+{
+  "name": "granite-lit-css-modularizer",
+  "authors": [
+    "Horacio Gonzalez <horacio.gonzalez@gmail.com>"
+  ],
+  "description": "`granite-lit-css-modularizer` is a small Node script to generate CSS modules for LitElement web components",
+  "version": "1.0.2",
+  "repository": "LostInBrittany/granite-lit-css-modularizer",
+  "main": "granite-lit-css-modularizer.js",
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "fs-extra": "^9.0.0",
+    "klaw": "^3.0.0"
+  }
+}
