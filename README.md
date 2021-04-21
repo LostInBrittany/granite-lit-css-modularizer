@@ -1,9 +1,9 @@
 ## granite-lit-css-modularizer
 
 
-`granite-lit-css-modularizer` is a small [Node](https://nodejs.org) script to generate JavaScript Modules (ESM) from CSS libraries to integrate them in [LitElement](https://lit-element.polymer-project.org/) web components. 
+`granite-lit-css-modularizer` is a small [Node](https://nodejs.org) script to generate JavaScript Modules (ESM) from CSS libraries to integrate them in [Lit](https://lit.dev/) web components. 
 
-The goal is to easily apply CSS libraries (like [Bootstrap](https://getbootstrap.com/), [Bulma](https://bulma.io/) or [Spectre](https://picturepan2.github.io/spectre/)) to LitElement web components.
+The goal is to easily apply CSS libraries (like [Bootstrap](https://getbootstrap.com/), [Bulma](https://bulma.io/) or [Spectre](https://picturepan2.github.io/spectre/)) to Lit web components.
 
 This is done by generating ESM exporting [lit-element CSS Template Result](https://lit-element.polymer-project.org/api/classes/_lit_element_.cssresult.html) created from the CSS files. 
 

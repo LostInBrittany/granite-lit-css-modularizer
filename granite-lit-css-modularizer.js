@@ -17,9 +17,17 @@ if (process.argv.length < 4 || process.argv.length > 5) {
   process.exit();
 }
 
+
 let folder = process.argv[2];
 let targetFolder = process.argv[3];
-let exportName = process.argv[3] || `styles`;
+let exportName = process.argv[4] || `styles`;
+
+
+
+console.log('Modularizing CSS');
+console.log(`Source folder: ${folder}`);
+console.log(`Target folder: ${targetFolder}`);
+console.log(`Export name: ${exportName}`);
 
 const  fs = require('fs-extra');
 const klaw = require('klaw');
@@ -33,7 +41,7 @@ function getHeader() {
   return `  
 /**
 @license Apache 2.0
-Copyright (c) 2020 Horacio "LostInBrittany" Gonzalez for the style module encapsulation of CSS files
+Copyright (c) 2021 Horacio "LostInBrittany" Gonzalez for the style module encapsulation of CSS files
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
@@ -46,7 +54,7 @@ limitations under the License.
 @demo demo/index.html
 */
 
-import { css } from 'lit-element';
+import { css } from 'lit';
 
 export const ${exportName} = css\`
 `;
